@@ -13,162 +13,188 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title></title>
 </head>
-<body class="premolde">
-
-  <!-- NAVBAR -->
-  <div id="navbar">
-    <nav class="navbar navbar-expand-lg ajuste-navbar ">
-        <div class="container">
-          <a class="navbar-brand lobster-regular fs-1 ajuste-ricomida text-white" href="#">Ricomida</a>
-          <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-            <div class="navbar-nav cabin-regular ajuste-menu mx-2fs-6">
-              <a class="nav-link text-white mx-2 px-1" href="#">Inicio</a>
-              <a class="nav-link text-white mx-2 px-1" href="#">Recetas</a>
-              <a class="nav-link text-white mx-2 px-1" href="#">Nosotros</a>
-              <a class="nav-link text-white mx-2 px-1" href="#">Contacto</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </div>
-  <!-- cuerpo -->
-  <div class="molde">
-  <div class="container mt-4">
-    <div class="d-lg-none linea"></div>
-    <div class="row  ">  
-        <div class="col-sm col-lg-6" >
-          <img class="img-fluid" src="assets/img/principal.jpg">
-        </div>
-        <div class="col-sm col-lg-6 ">
-            <div class="row justify-content-lg-start justify-content-center">
-              <div class="col-lg-8 texto-pizza1 cabin-bold mt-4 text-center text-lg-start">
-                PIZZA AL ESTILO CHICAGO CON ESPINACAS Y CHAMPIÑONES
+<body >
+  <div class="overflow-hidden cont-padre">
+       <!-- NAVBAR -->
+       <div id="navbar">
+        <nav class="navbar navbar-expand-lg ajuste-navbar ">
+            <div class="container">
+              <a class="navbar-brand lobster-regular fs-1 ajuste-ricomida text-white" href="#">Ricomida</a>
+              <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav cabin-regular ajuste-menu mx-2 fs-6">
+                  <a class="nav-link text-white mx-3 px-1" href="#">Inicio</a>
+                  <a class="nav-link text-white mx-3 px-1" href="#">Recetas</a>
+                  <a class="nav-link text-white mx-3 px-1" href="#">Nosotros</a>
+                  <a class="nav-link text-white mx-3 px-1" href="#">Contacto</a>
               </div>
             </div>
-            <br>          
-            <div class="mx-0 linea"></div>
-            <div class="text-center text-lg-start">
-              <p class="cabin-regular py-3">110 MIN / 6 A 8 PORCIONES</p>
-            </div>
-            <div class="d-flex flex-row justify-content-center justify-content-lg-start ">
-                <div class="">
-                  <button type="button" class="me-3 btn btn-outline-dark">Enviar por Correo</button>
-                </div>
-                <div class="">
-                  <button type="button" class="ms-3  btn btn-outline-dark">Añadir a Favoritos</button>
-                </div>
-            </div>
-            
+          </div>
+        </nav>
+      </div>
+      <div class="molde">
+          <!-- 1era parte -->
+        <div class="container mt-4">
+          <div class="d-lg-none linea"></div><!--LINEA-->
+          <div class="row ">  
+              <div class="col-sm col-lg-6" >
+                <img class="img-fluid" src="assets/img/principal.jpg">
+              </div>
+              <div class="col-sm col-lg-6 ">
+                  <div class="row justify-content-lg-start justify-content-center">
+                    <div class="col-lg-8 texto-pizza1 cabin-bold mt-4 text-center text-lg-start">
+                      PIZZA AL ESTILO CHICAGO CON ESPINACAS Y CHAMPIÑONES
+                    </div>
+                  </div>
+                  <br>          
+                  <div class="mx-0 linea"></div>
+                  <div class="text-center text-lg-start">
+                    <p class="cabin-regular py-3">110 MIN / 6 A 8 PORCIONES</p>
+                  </div>
+                  <div class="d-flex flex-row justify-content-center justify-content-lg-start ">
+                      <button id="enviarcorreo" type="button" class="m-3 btn btn-outline-dark" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Presiona para enviar a tu correo">
+                          Enviar por Correo
+                      </button>
+                      <button type="button" class="m-3 btn btn-outline-dark" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Agrega esta receta a tus favoritos">
+                        Añadir a Favoritos
+                      </button>
+                  </div>
+                  
+              </div>
+          </div>
         </div>
-    </div>
-  </div>
-  <br>
-<!-- carrusel -->
-  <div id="rodslider" class="d-none d-lg-block">
-      <ol class="fotos">
-          <li id="lote1">
-              <img src="assets/img/slider-1.png" alt="">
-              <img src="assets/img/slider-2.png" alt="">
-              <img src="assets/img/slider-3.png" alt="">
-              <img src="assets/img/slider-4.png" alt="">
-          </li>
-          <li id="lote2">
-              <img src="assets/img/slider-5.png" alt="">
-              <img src="assets/img/slider-6.png" alt="">
-              <img src="assets/img/slider-7.png" alt="">
-              <img src="assets/img/slider-8.png" alt="">
-          </li>
-      </ol>   
-       <ol class="menu">
-          <li>
-              <a  href="#lote1">•</a>
-          </li>
-          <li>
-              <a href="#lote2">•</a>
-          </li>
-          
-      </ol>
-  </div>
-  <div class="d-none d-sm-block linea2"></div>
-  <br>
- 
-<!-- receta pizza -->
-  <div class="container cabin-regular col-11 fs-3 lh-lg">
-      <div>
-        <l class="fw-bold">INGREDIENTES </l><br> <br>
-        <l>Masa</l><br>
-        <l>20 gr de levadura seca instantánea</l><br>
-        <l>1 cucharadita de azúcar</l><br>
-        <l>500 ml agua tibia</l><br>
-        <l>100 ml aceite vegetal</l><br>
-        <l>4 cucharadas de aceite de oliva </l> <br>           
-        <l>65 gr harina de maíz fina (chuchoca)</l><br>
-        <l>2 cucharaditas de sal</l><br>
-        <l>625 gr harina</l><br>
-        <l>Salsa</l><br><br>
-        <l>5 cucharadas de aceite de oliva</l><br>
-        <l>½ cebolla picada en cubos finos</l><br>
-        <l>2 cucharaditas de sal</l><br>
-        <l>3 cucharadas de Orégano Gourmet</l><br>
-        <l>2 tarro de tomates en cubos al natural</l><br>
-        <l>2 cucharaditas de azúcar Relleno</l><br>
-        <l>½ cebolla, en cubos</l><br>
-        <l>500 gr hojas de espinacas picadas</l><br>
-        <l>400 gr de champiñones laminados</l><br>
-        <l>300 gr de queso mozarella</l><br>
-        <l>4 cucharadas queso parmesano</l><br>
         <br>
+          <!-- carrusel -->
+        <div id="rodslider" class="d-none d-lg-block">
+            <ol class="fotos">
+                <li id="lote1">
+                    <img src="assets/img/slider-1.png" alt="">
+                    <img src="assets/img/slider-2.png" alt="">
+                    <img src="assets/img/slider-3.png" alt="">
+                    <img src="assets/img/slider-4.png" alt="">
+                </li>
+                <li id="lote2">
+                    <img src="assets/img/slider-5.png" alt="">
+                    <img src="assets/img/slider-6.png" alt="">
+                    <img src="assets/img/slider-7.png" alt="">
+                    <img src="assets/img/slider-8.png" alt="">
+                </li>
+            </ol>   
+            <ol class="menu">
+                <li>
+                    <a  href="#lote1">•</a>
+                </li>
+                <li>
+                    <a href="#lote2">•</a>
+                </li>
+                
+            </ol>
+        </div>
+        <div class="d-none d-sm-block linea2"></div> <!--LINEA2-->
+        <br>
+      
+        <!-- receta pizza -->
+        <div class="container mb-2 cabin-regular col-11 d-lg-flex lh-lg">
+            <div class="fs-4 col-lg-6">
+              <l id="ingredientes" class="fw-bold">INGREDIENTES </l><br> <br>
+              <l>Masa</l><br><br>
+              <l>20 gr de levadura seca instantánea</l><br>
+              <l>1 cucharadita de azúcar</l><br>
+              <l>500 ml agua tibia</l><br>
+              <l>100 ml aceite vegetal</l><br>
+              <l>4 cucharadas de aceite de oliva </l> <br>           
+              <l>65 gr harina de maíz fina (chuchoca)</l><br>
+              <l>2 cucharaditas de sal</l><br>
+              <l>625 gr harina</l><br>
+              <l>Salsa</l><br><br>
+              <l>5 cucharadas de aceite de oliva</l><br>
+              <l>½ cebolla picada en cubos finos</l><br>
+              <l>2 cucharaditas de sal</l><br>
+              <l>3 cucharadas de Orégano Gourmet</l><br>
+              <l>2 tarro de tomates en cubos al natural</l><br>
+              <l>2 cucharaditas de azúcar Relleno</l><br>
+              <l>½ cebolla, en cubos</l><br>
+              <l>500 gr hojas de espinacas picadas</l><br>
+              <l>400 gr de champiñones laminados</l><br>
+              <l>300 gr de queso mozarella</l><br>
+              <l>4 cucharadas queso parmesano</l><br>
+              <br>
+            </div>
+            <div class="fs-4 col-lg-6">
+              <p id="preparacion" class="fw-bold">PREPARACIÓN</p>
+              <br><p>1. Para la masa, disolver la levadura y el azúcar en agua tibia en un bol grande. Dejar reposar 2 minutos. Agregar el aceite, la harina de maíz, sal y 400gr de harina. Mezclar bien. Amasar y agregar el resto de harina, la cantidad necesaria para tener una masa blanda. Poner en el mesón y amasar por 5 minutos o hasta tener una masa lisa y elástica (agregar harina en el mesón a medida que se va amasando para que la masa no se pegue) . Poner la masa en un bol aceitado, tapar con un paño de cocina limpio y dejar reposar hasta que la masa duplique su volumen (leudar). Golpear la masa para que baje y luego dejar leudar por 40 minutos adicionales.</p>
+              <br><p>2. Mientras tanto preparar la salsa: Calentar 4 cucharadas de aceite en una olla a fuego medio. Agregar la cebolla, Orégano Gourmet, Albahaca Gourmet, sal y cocinar hasta que la cebolla esté dorada. Agregar el ajo y cocinar por 30 segundos. Agregar los tomates junto al jugo del tarro, a la mezcla de cebolla. Agregar el azúcar y cocinar hasta que la mezcla se haya reducido y espesado, como 30 minutos. Sazonar con sal y pimienta a gusto. Reservar.</p>
+              <br><p>3. Relleno: Cocinar las chalotas en el aceite de oliva hasta que estén transparentes. Agregar los champiñones y las espinacas, cocinar hasta que estén cocidos y se haya evaporado todo el líquido que hayan votado los vegetales. Reservar.</p>
+              <br><p>4. Calentar el horno a 220C.</p>
+              <br><p>5. Una vez que la masa haya reposado, dividirla en dos bolas. Estirar cada masa para cubrir dos moldes (desmontables) de 26 cm, hacer un borde de 5 cm con la masa. Dividir el relleno entre las dos pizza, tapar con el queso mozarella, luego terminar con la salsa de tomates y finalmente espolvorear el queso rallado.</p>
+              <br><p>6. Hornear por 35 a 40 minutos o hasta que el relleno esté caliente y la base esté esponjosa y dorada. Esperar unos minutos antes de desmoldar.</p>
+              <br>
+            </div>
+        </div>
+        <!-- tarjetas recetas -->
+        <div class="linea">
+        </div><br>
+        <div class="d-flex justify-content-center ">
+            <div class="w-75">
+              <p class="text-center cabin-bold fs-1">RECETAS RELACIONADAS</p>
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="d-lg-flex col-sm justify-content-around">
+              <!-- TARJETA1 -->
+              <div class="col-lg-4 p-2">
+                <div class="card " >
+                  <img id="imagencard1" src="assets/img/recipe-card-1.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h3 id="titulocard1" class="cabin-bold p-3">PANQUEQUES CON MANJAR Y CREMA</h3>
+                    <p id="cuerpocard1" class="px-3 cabin-regular card-text">Mus enim elementum dignissim class eleifend justo, ut nunc magnis est vulputate nostra, blandit erat luctus faucibus orci.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- TARJETA2 -->
+              <div class="col-lg-4 p-2">
+                <div class="card ">
+                  <img id="imagencard2" src="assets/img/recipe-card-2.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h3 id="titulocard2" class="cabin-bold p-2">TIRAMISÚ</h3><br>
+                    <p id="cuerpocard2" class="px-3 cabin-regular card-text">Congue fermentum dignissim rhoncus elementum ac nisi, proin phasellus lacinia sed faucibus mauris, taciti scelerisque nulla ornare consequat.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- TARJETA3 -->
+              <div class="col-lg-4 p-2 h-100">
+                <div class="card " >
+                  <img id="imagencard3" src="assets/img/recipe-card-3.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h3 id="titulocard3" class=" cabin-bold p-2">PLATEADA</h3><br>
+                    <p id="cuerpocard3" class="px-3 cabin-regular card-text">Cubilia elementum posuere arcu rhoncus egestas lectus, diam aliquam laoreet ac eleifend risus, urna auctor inceptos mattis dapibus.</p>
+                  </div>
+                </div>
+              </div>          
+            </div>
+        </div>
       </div>
-      <div>
-        <p>PREPARACIÓN <br>1. Para la masa, disolver la levadura y el azúcar en agua tibia en un bol grande. Dejar reposar 2 minutos. Agregar el aceite, la harina de maíz, sal y 400gr de harina. Mezclar bien. Amasar y agregar el resto de harina, la cantidad necesaria para tener una masa blanda. Poner en el mesón y amasar por 5 minutos o hasta tener una masa lisa y elástica (agregar harina en el mesón a medida que se va amasando para que la masa no se pegue) . Poner la masa en un bol aceitado, tapar con un paño de cocina limpio y dejar reposar hasta que la masa duplique su volumen (leudar). Golpear la masa para que baje y luego dejar leudar por 40 minutos adicionales.</p>
-        <br><p>2. Mientras tanto preparar la salsa: Calentar 4 cucharadas de aceite en una olla a fuego medio. Agregar la cebolla, Orégano Gourmet, Albahaca Gourmet, sal y cocinar hasta que la cebolla esté dorada. Agregar el ajo y cocinar por 30 segundos. Agregar los tomates junto al jugo del tarro, a la mezcla de cebolla. Agregar el azúcar y cocinar hasta que la mezcla se haya reducido y espesado, como 30 minutos. Sazonar con sal y pimienta a gusto. Reservar.</p>
-        <br><p>3. Relleno: Cocinar las chalotas en el aceite de oliva hasta que estén transparentes. Agregar los champiñones y las espinacas, cocinar hasta que estén cocidos y se haya evaporado todo el líquido que hayan votado los vegetales. Reservar.</p>
-        <br><p>4. Calentar el horno a 220C.</p>
-        <br><p>5. Una vez que la masa haya reposado, dividirla en dos bolas. Estirar cada masa para cubrir dos moldes (desmontables) de 26 cm, hacer un borde de 5 cm con la masa. Dividir el relleno entre las dos pizza, tapar con el queso mozarella, luego terminar con la salsa de tomates y finalmente espolvorear el queso rallado.</p>
-        <br><p>6. Hornear por 35 a 40 minutos o hasta que el relleno esté caliente y la base esté esponjosa y dorada. Esperar unos minutos antes de desmoldar.</p>
-      </div>
-  </div>
-<!-- tarjetas recetas -->
-  <div class="row mx-auto ">
-      <hr class=""><br>
-      <h1 class="cabin-bold text-center">RECETAS RELACIONADAS</h1><br>
-      <div class="container-fluid">
-        <div class="card my-4" style="width: 18rem;">
-          <img src="assets/img/recipe-card-1.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h3 class="pb-3">PANQUEQUES CON MANJAR Y CREMA</h3>
-            <p class="card-text">Mus enim elementum dignissim class eleifend justo, ut nunc magnis est vulputate nostra, blandit erat luctus faucibus orci.</p>
+        <!-- NEWSLETTER -->
+      <div id="newsletter">
+        <div class="d-flex flex-column justify-content-center ajuste-newsletter">
+          <div class="w-75 mx-auto">
+            <h1 class="p-2 text-center">SUSCRÍBETE EN NUESTRO NEWSLETTER</h1>
+            <div class="my-2 d-flex justify-content-center text-center fs-3">
+              <p class="p-2 text-center">y obtén las mejores recetas que tenemos en <span class="lobster-regular">Ricomida</span></p>
+            </div>
+            <div class="my-4 d-flex justify-content-center">
+              <button type="button" class="btn boton2 btn-danger">Empezar</button>
+            </div>
           </div>
         </div>
-        <div class="card my-4" style="width: 18rem;">
-          <img src="assets/img/recipe-card-2.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h3 class="pb-3">TIRAMISÚ</h3>
-            <p class="card-text">Congue fermentum dignissim rhoncus elementum ac nisi, proin phasellus lacinia sed faucibus mauris, taciti scelerisque nulla ornare consequat.</p>
-          </div>
-        </div>
-        <div class="card my-4" style="width: 18rem;">
-          <img src="assets/img/recipe-card-3.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h3 class="pb-3">PLATEADA</h3>
-            <p class="card-text">Cubilia elementum posuere arcu rhoncus egestas lectus, diam aliquam laoreet ac eleifend risus, urna auctor inceptos mattis dapibus.</p>
-          </div>
-        </div>
+          
       </div>
-  </div>
-<!-- NEWSLETTER -->
-  <div class="container-fluid py-3 ajuste-newsletter">
-        <h1 class="">SUSCRÍBETE EN NUESTRO NEWSLETTER</h1>
-        <p class="">y obtén las mejores recetas que tenemos en <p class="lobster-regular">Ricomida</p></p>
-        <button type="button" class="btn btn-danger">Danger</button>
-  </div>
-<!-- FOOTER -->
-  <footer class="ajuste-footer p-5  text-center">
-      <h2 class="lobster-regular fs-1 text-white">Ricomida</h2>
-  </footer>
+        <!-- FOOTER -->
+      <footer class="d-flex flex-column justify-content-center ajuste-footer text-center mb-0 pb-0">
+        <h2 class="lobster-regular fs-1 text-white">Ricomida</h2>
+      </footer>
   </div>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
@@ -176,7 +202,4 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="assets/js/script.js" ></script>
 </body>
-</html>
-
-
-                                                                        
+</html>                                                                        

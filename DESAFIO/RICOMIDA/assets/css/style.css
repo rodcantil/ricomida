@@ -73,12 +73,14 @@
     text-align: left;
 }
 
-@media (max-width: 340px) {
+@media only screen and (max-width: 340px) {
     .texto-pizza1 {
         font-size: 25px;
         
     }
-    
+    body { margin: 0;
+
+    }
    }
 
 
@@ -143,12 +145,30 @@ ol.menu {
     text-decoration: none;
     font-size: 40px;
 }
+.card {
+    height: 454px;
+   margin-bottom: 80px;
+   border-radius: 0px;
+}
+
 
 .ajuste-newsletter {
     background-color: #DC3545;
     color: #ffffff;
+    height: 534px;
+  
+}
+
+
+.boton2 {
+    max-width: 280px;
+    width: 100%;
+    border: solid 1px white;
 }
 
 .ajuste-footer {
     background-color: #373A3C;
+    height: 145px;
+    
 }
+
